@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warning: You Are Hacked</title>
+  <style>
+    body {
+      background-color: black;
+      color: red;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      font-size: 2em;
+      animation: pulse 1s infinite alternate;
+    }
+
+    /* Efekti i dritës që pulson */
+    @keyframes pulse {
+      0% {
+        background-color: black;
+        color: red;
+      }
+      50% {
+        background-color: darkred;
+        color: white;
+      }
+      100% {
+        background-color: red;
+        color: white;
+      }
+    }
+
+    .message {
+      font-size: 3em;
+      font-weight: bold;
+    }
+
+    .normal-message {
+      color: yellow;
+      font-size: 1.5em;
+    }
+
+    .link {
+      color: white;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    audio {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <!-- Mesazhi Frikësues -->
+  <div class="message">YOU ARE HACKED</div>
+  <div class="normal-message">This is a simulated warning to show you the dangers of unsafe behavior online!</div>
+  <div class="normal-message">Always be cautious with passwords, links, and the websites you visit!</div>
+  <div class="normal-message">
+    <p>Learn more about online security: <a class="link" href="https://www.cybersecurityeducation.org/" target="_blank">Cybersecurity Education</a></p>
+  </div>
+
+  <!-- Muzika e frikshme -->
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    setTimeout(function() {
+      alert("This is a simulated warning. You are not actually hacked! Stay safe online.");
+    }, 5000);  // Alert pas 5 sekondash
+  </script>
+</body>
+</html>
